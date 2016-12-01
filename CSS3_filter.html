@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3_Filter_Demo</title>
+	<style>
+		body{
+			margin:0;
+		}
+		ul,li{
+			margin:0;
+			padding:0;
+			list-style: none;
+		}
+		.imgbox{
+			width:1200px;
+			margin:0 auto;
+			padding-top: 20px;
+		}
+		.img-item{
+			float: left;
+			width:350px;
+			margin:0 25px 30px;
+			transition: all .3s ease-in-out;
+		}
+		h4{
+			text-align: center;
+		}
+		.img-item img{
+			display: block;
+			margin:0 auto;
+			cursor: pointer;
+			transition: all .3s ease-in-out;
+		}
+		.img-item-blur:hover img{
+			-webkit-filter: blur(5px); 
+    		filter: blur(5px);
+		}
+		.img-item-brightness:hover img{
+			-webkit-filter: brightness(10%);
+    		filter: brightness(10%);
+		}
+		.img-item-contrast:hover img{
+			-webkit-filter: contrast(10%);
+    		filter: contrast(10%);
+		}
+		.img-item-grayscale:hover img{
+			-webkit-filter: grayscale(100%);
+    		filter: grayscale(100%);
+		}
+		.img-item-brightness:hover img{
+			-webkit-filter: brightness(10%);
+    		filter: brightness(10%);
+		}
+		.img-item-hue-rotate:hover img{
+			-webkit-filter: hue-rotate(90deg);
+    		filter: hue-rotate(90deg);
+		}
+		.img-item-invert:hover img{
+			-webkit-filter: invert(100%);
+    		filter: invert(100%);
+		}
+		.img-item-opacity:hover img{
+			-webkit-filter: opacity(20%);
+    		filter: opacity(20%);
+		}
+		.img-item-saturate:hover img{
+			-webkit-filter: saturate(500%);
+    		filter: saturate(500%);
+		}
+		.img-item-sepia:hover img{
+			-webkit-filter: sepia(100%);
+    		filter: sepia(100%);
+		}
+		@media (max-width:1200px){
+			.imgbox{
+				width:800px;
+			}
+		}
+		@media (max-width:800px){
+			.imgbox{
+				width:400px;
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul class="imgbox">
+		<li class="img-item img-item-blur">
+			<h4>filter: blur(5px);</h4>
+			<h4>高斯高斯模糊：数值越大越模糊</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-brightness">
+			<h4>filter: brightness(10%);</h4>
+			<h4>亮度：越接近0越黑，越接近1，越接近原图</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-contrast">
+			<h4>filter: contrast(10%);</h4>
+			<h4>对比度：0~1 越大越接近原图</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-grayscale">
+			<h4>filter: grayscale(100%);</h4>
+			<h4>灰度：0~1 越大越灰</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-hue-rotate">
+			<h4>filter: hue-rotate(90deg);</h4>
+			<h4>色相环旋转角度：360deg相当于转了一圈</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-invert">
+			<h4>filter: invert(100%);</h4>
+			<h4>线性翻转输入图像：100% 完全翻转</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-opacity">
+			<h4>filter: opacity(20%);</h4>
+			<h4>不透明度：0~1 越小越透明</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-saturate">
+			<h4>filter: saturate(500%);</h4>
+			<h4>饱和度：允许超过100%</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+		<li class="img-item img-item-sepia">
+			<h4>filter: sepia(100%);</h4>
+			<h4>转为深褐色：0~1 越大越深</h4>
+			<img src="htmlburger.png" width="250">
+			<img src="lufy.jpg" width="250">
+		</li>
+	</ul>
+</body>
+</html>
